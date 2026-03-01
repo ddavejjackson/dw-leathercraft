@@ -1,0 +1,23 @@
+---
+interface Props {
+  platform: string;
+  username: string;
+}
+
+const { platform, username } = Astro.props;
+---
+
+<a
+  href={`https://www.${platform}.com/${username}`}
+  target="_blank"
+  rel="noopener noreferrer"
+  class="inline-block px-4 py-2 rounded-md 
+         bg-black text-yellow-500 
+         border border-yellow-500
+         font-medium tracking-wide
+         transition duration-300
+         hover:bg-yellow-500 hover:text-black
+         hover:shadow-[0_0_12px_rgba(234,179,8,0.6)]"
+>
+  {platform}
+</a>
