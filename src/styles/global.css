@@ -1,2 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400..700&display=swap');
+
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
+
+@theme {
+    --font-sans: "Lora", sans-serif;
+}
